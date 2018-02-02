@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="1000" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="1529"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="apellidos" class="java.lang.String"/>
+	<field name="identificacion" class="java.lang.String"/>
+	<field name="institucion" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<field name="pruebaLecturaCritica" class="java.lang.String"/>
+	<field name="pruebaMatematica" class="java.lang.String"/>
+	<field name="pruebaSociales" class="java.lang.String"/>
+	<field name="pruebaNaturales" class="java.lang.String"/>
+	<field name="pruebaIngles" class="java.lang.String"/>
+	<field name="departamento" class="java.lang.String"/>
+	<field name="nivelL" class="java.lang.String"/>
+	<field name="descNivelL" class="java.lang.String"/>
+	<field name="nivelM" class="java.lang.String"/>
+	<field name="descNivelM" class="java.lang.String"/>
+	<field name="nivelS" class="java.lang.String"/>
+	<field name="descNivelS" class="java.lang.String"/>
+	<field name="nivelN" class="java.lang.String"/>
+	<field name="descNivelN" class="java.lang.String"/>
+	<field name="nivelI" class="java.lang.String"/>
+	<field name="descNivelI" class="java.lang.String"/>
+	<variable name="variable1" class="java.lang.String"/>
+	<variable name="variable2" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="175" splitType="Stretch">
+			<staticText>
+				<reportElement x="185" y="14" width="151" height="23"/>
+				<textElement/>
+				<text><![CDATA[REPORTE DE RESULTADOS ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="52" y="37" width="94" height="129"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Users\\naren\\OneDrive\\Documents\\NetBeansProjects\\reportes\\src\\imagenes\\logoconano.png"]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement x="337" y="75" width="188" height="91"/>
+			</rectangle>
+			<line>
+				<reportElement x="336" y="113" width="189" height="1"/>
+			</line>
+			<line>
+				<reportElement x="470" y="114" width="1" height="52"/>
+			</line>
+			<staticText>
+				<reportElement x="364" y="84" width="123" height="20"/>
+				<textElement/>
+				<text><![CDATA[PROMEDIO GENERAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="129" width="113" height="37"/>
+				<textElement/>
+				<text><![CDATA[De 360 puntos posibles
+Su puntaje es: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="475" y="129" width="50" height="20"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="701" splitType="Stretch">
+			<rectangle>
+				<reportElement x="52" y="59" width="473" height="130"/>
+			</rectangle>
+			<line>
+				<reportElement x="52" y="59" width="473" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="92" width="473" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="121" width="473" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="154" width="473" height="1"/>
+			</line>
+			<line>
+				<reportElement x="220" y="60" width="1" height="129"/>
+			</line>
+			<staticText>
+				<reportElement x="72" y="72" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Nombre:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="102" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Apellidos:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="134" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Identificacion:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="169" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Institucion:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="247" y="72" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="247" y="101" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{apellidos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="247" y="134" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{identificacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="247" y="169" width="191" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{institucion}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="52" y="24" width="473" height="24" backcolor="#339900"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="52" y="28" width="473" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PARTE I. DATOS GENERALES DEL PARTICIPANTE 
+]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="52" y="250" width="473" height="197" backcolor="#FFFFFF"/>
+			</rectangle>
+			<line>
+				<reportElement x="52" y="289" width="473" height="2"/>
+			</line>
+			<line>
+				<reportElement x="52" y="329" width="473" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="368" width="473" height="1"/>
+			</line>
+			<line>
+				<reportElement x="52" y="404" width="473" height="1"/>
+			</line>
+			<staticText>
+				<reportElement x="72" y="269" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Lectura Crítica]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="310" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Matemáticas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="348" width="137" height="20"/>
+				<textElement/>
+				<text><![CDATA[Sociales y Ciudadanas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="384" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Ciencias Naturales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="427" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Inglés]]></text>
+			</staticText>
+			<line>
+				<reportElement x="221" y="250" width="1" height="197"/>
+			</line>
+			<rectangle>
+				<reportElement x="52" y="206" width="473" height="25" backcolor="#339900"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="52" y="211" width="473" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PARTE II. RESULTADOS INDIVIDUALES POR MÓDULO DE COMPETENCIAS GENÉRICAS ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="264" y="269" width="145" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pruebaLecturaCritica}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="309" width="145" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pruebaMatematica}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="348" width="145" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pruebaSociales}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="384" width="145" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pruebaNaturales}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="427" width="145" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{pruebaIngles}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="52" y="480" width="473" height="25" backcolor="#339900"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="52" y="485" width="473" height="20" forecolor="#FFFFFF"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[PARTE III. NIVEL DE DESEMPEÑO Y DESCRIPTORES DEL NIVEL POR MODULOS ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="52" y="518" width="473" height="157"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="62" y="591" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Lectura Critica]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="297" y="518" width="183" height="147"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{descNivelL}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="171" y="518" width="116" height="157" backcolor="#99D393"/>
+			</rectangle>
+			<textField>
+				<reportElement x="182" y="591" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nivelL}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="823" splitType="Stretch">
+			<staticText>
+				<reportElement x="53" y="98" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Lectura Critica]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="43" y="25" width="473" height="202"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="162" y="25" width="116" height="202" backcolor="#99D393"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="53" y="108" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Matematicas]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="108" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nivelM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="35" width="188" height="180"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{descNivelM}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="43" y="241" width="473" height="164"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="162" y="241" width="116" height="164" backcolor="#99D393"/>
+			</rectangle>
+			<textField>
+				<reportElement x="173" y="314" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nivelS}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="260" width="187" height="131"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{descNivelS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="53" y="314" width="109" height="20"/>
+				<textElement/>
+				<text><![CDATA[Sociales y Ciudadanas]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="43" y="424" width="473" height="157"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="162" y="424" width="116" height="157" backcolor="#99D393"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="53" y="493" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Naturales]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="493" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nivelN}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="445" width="188" height="121"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{descNivelN}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="47" y="597" width="473" height="157"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="166" y="597" width="116" height="157" backcolor="#99D393"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="53" y="665" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Ingles]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="665" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{nivelI}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="297" y="614" width="183" height="125"/>
+				<textElement>
+					<font size="5"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$F{descNivelI}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>
