@@ -6,7 +6,7 @@
 package com.vamosaprogramar.vista;
 
 import javax.swing.JFileChooser;
-import reportes.Reportes;
+import com.vamosaprogramar.app.Reportes;
 
 /**
  *

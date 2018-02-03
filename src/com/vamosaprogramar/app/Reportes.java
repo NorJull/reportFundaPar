@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package reportes;
+package com.vamosaprogramar.app;
 
 import com.vamosaprogramar.beans.Estudiante;
 import com.vamosaprogramar.beans.EstudianteLista;
@@ -34,7 +34,7 @@ public class Reportes {
     
     @SuppressWarnings("unchecked") 
     public static void generarReportes() throws IOException{
-     String sourceFileName = "UsuarioReporte.jasper";
+     String sourceFileName = "C:\\Users\\naren\\OneDrive\\Documents\\NetBeansProjects\\reportes\\src\\com\\vamosaprogramar\\reportes\\UsuarioReporte.jasper";
       String printFileName = null;
           
       List<Estudiante> dataList = EstudianteLista.getEstudiantes(rutaCSV);

@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="1000" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
 	<property name="ireport.zoom" value="1.2100000000000006"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="1529"/>
+	<property name="ireport.y" value="0"/>
 	<field name="nombre" class="java.lang.String"/>
 	<field name="apellidos" class="java.lang.String"/>
 	<field name="identificacion" class="java.lang.String"/>
@@ -36,10 +36,6 @@
 				<textElement/>
 				<text><![CDATA[REPORTE DE RESULTADOS ]]></text>
 			</staticText>
-			<image>
-				<reportElement x="52" y="37" width="94" height="129"/>
-				<imageExpression class="java.lang.String"><![CDATA["C:\\Users\\naren\\OneDrive\\Documents\\NetBeansProjects\\reportes\\src\\imagenes\\logoconano.png"]]></imageExpression>
-			</image>
 			<rectangle>
 				<reportElement x="337" y="75" width="188" height="91"/>
 			</rectangle>
@@ -67,6 +63,10 @@ Su puntaje es: ]]></text>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$F{total}]]></textFieldExpression>
 			</textField>
+			<image>
+				<reportElement x="62" y="19" width="81" height="130"/>
+				<imageExpression class="java.lang.String"><![CDATA["C:\\Users\\naren\\OneDrive\\Documents\\NetBeansProjects\\reportes\\src\\com\\vamosaprogramar\\imagenes\\logoconano.png"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>

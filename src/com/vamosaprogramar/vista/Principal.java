@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import reportes.Reportes;
+import com.vamosaprogramar.app.Reportes;
 
 /**
  *
