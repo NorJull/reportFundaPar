@@ -18,12 +18,20 @@ import java.util.List;
 public class EstudianteUDCLista {
     public static final String SEPARATOR=";";
     
-    public static List<EstudianteUDC> getEstuciantesUDC(String ruta){
+    public static List<EstudianteUDC> getEstuciantesUDC(String ruta) throws IOException{
         
-        
-        
-        
-        return null;
+       List<String> rows = getRows(ruta);
+       List<EstudianteUDC> estudiantes = new ArrayList<>();
+     
+        for(String row : rows){
+    
+        String[] fields = row.split(SEPARATOR);
+    
+        EstudianteUDC estudianteUDC = new EstudianteUDC(fields[0], fields[1], fields[2], fields[3],fields[4], fields[5], fields[6], fields[7], fields[8]);
+        estudiantes.add(estudianteUDC);
+        }
+   
+    return estudiantes;
     }
     
     

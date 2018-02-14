@@ -3,9 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/reportes/App.java</file>
-            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/reportes/Reportes.java</file>
+            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/com/vamosaprogramar/app/App.java</file>
+            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/com/vamosaprogramar/beans/EstudianteUDCLista.java</file>
+            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/com/vamosaprogramar/beans/Estudiante.java</file>
+            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/com/vamosaprogramar/app/Reportes.java</file>
+            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/com/vamosaprogramar/beans/EstudianteUDC.java</file>
             <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/com/vamosaprogramar/beans/EstudianteLista.java</file>
+            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/com/vamosaprogramar/vista/Principal.java</file>
+            <file>file:/C:/Users/naren/OneDrive/Documents/NetBeansProjects/reportes/src/com/vamosaprogramar/reportes/UsuarioReporte.jrxml</file>
         </group>
     </open-files>
 </project-private>
